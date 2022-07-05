@@ -92,6 +92,19 @@ const app = new Vue(
                 }
             },
 
+
+            // Creo autoplay con una funzione che mi fa scorrere le immagini automaticamente
+            autoPlay: function () {
+                setInterval(() => {
+                    this.nextSlide();
+                }, 3000);
+            },
+
+        },
+
+        // Creo una funzione che mi fa partire l'autoplay
+        created: function () {
+            this.autoPlay();
         },
 
     }
