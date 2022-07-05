@@ -65,5 +65,24 @@ const app = new Vue(
                 }
             ],
         },
+
+        methods: {
+
+            nextSlide: function () {
+                this.i++;
+                if (this.i >= this.slides.length) {
+                    this.i = 0;
+                }
+            },
+
+            prevSlide: function () {
+                this.i--;
+                if (this.i < 0) {
+                    this.i = this.slides.length - 1;
+                }
+            },
+
+        },
     }
+
 );
