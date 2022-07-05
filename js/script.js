@@ -82,6 +82,12 @@ const app = new Vue(
                 }
             },
 
+            isActive: function (index) {
+                if (index === this.i) {
+                    return "active";
+                }
+            },
+
         },
     }
 
