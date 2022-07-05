@@ -82,14 +82,18 @@ const app = new Vue(
                 }
             },
 
+            showImg: function (index) {
+                this.i = index;
+            },
+
             isActive: function (index) {
                 if (index === this.i) {
                     return "active";
                 }
             },
 
-
         },
+
     }
 
 );

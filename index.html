@@ -32,7 +32,7 @@
                     <div @click="prevSlide" class="prev"></div>
                     <div @click="nextSlide" class="next"></div>
                     <div v-for="(element, index) in slides" class="thumb" :class="isActive(index)">
-                        <img :src="slides[index].image" :alt="slides[index].title">
+                        <img @click="showImg(index)" :src="slides[index].image" :alt="slides[index].title">
                     </div>
                 </div>
             </div>
